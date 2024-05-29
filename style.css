@@ -9,3 +9,23 @@ main h1{
     text-align: center;
     
 }
+header{
+    font-family: sans-serif;
+    line-height: 30px;
+    color: rgb(97, 79, 79);
+    background-color: aqua;
+    
+}
+.pages{
+    background-color: green;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+ul{
+    list-style: none;
+}
