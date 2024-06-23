@@ -8,6 +8,12 @@ ul li a{
     color: rgb(228, 227, 226);
     font-family: sans-serif;
 }
+.search-button{
+    display: none;
+}
+.menu .itens li a:hover{
+    color: yellow;
+}
 .menu .logo a{
     color: yellow;
 }
@@ -20,21 +26,112 @@ ul li a{
     
     text-align: center;
 }
+
 .itens{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    justify-content: space-between;
     width: 40vw;
+    
+    height: 5vh;
+    position: relative;
+    top: 2px;
+
+    
+}
+.slider{
+    width: 100vw;
+    height: 95vh;
+}
+.slides{
+    display: flex;
+}
+#f1:checked~.first{
+    margin-left: 0;
+}
+#f2:checked ~.first{
+    margin-left: -100%;
+}
+#f3:checked~.first{
+   margin-left: -200%; 
+}
+#f4:checked~.first{
+    margin-left: -300%;
+}
+.slides img{
+   width: 100vw;
+   height: 95vh;
+}
+.manual-navigation{
+    position: relative;
+    width: 100vw;
+    bottom: 6.5vh;
+    display: flex;
+    justify-content: center;
     
     
 }
+.manual-btn{
+    
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-auto{
+    position: absolute;
+    width: 100vw;
+    margin-top: 89vh;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.nav-auto div{
+    border: solid 1px rgb(0, 255, 76) ;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 3vw;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 3vw;
+}
+.nav-auto div:hover{
+    background-color: green;
+}
 
+#f1:checked~.nav-auto .auto-btn1{
+    background-color: violet;
+}
+#f2:checked~.nav-auto .auto-btn2{
+    background-color: violet;
+}
+#f3:checked~.nav-auto .auto-btn3{
+    background-color: violet;
+}
+#f4:checked~.nav-auto .auto-btn4{
+    background-color: violet;
+}
+.slide{
+    
+    position: relative;
+}
+.slides input{
+    display: none;
+}
 .menu{
     display: flex;
     align-items: center;
     border-bottom: solid black;
     background: linear-gradient(black,rgb(71, 70, 70),rgb(28, 28, 36));
     height: 5vh;
-}
+    justify-content: space-around;
+}   
 .search-bar{
     
     width: 30vw;
@@ -93,6 +190,7 @@ ul li a{
         padding: 2vh;
     }
     .search-button{
+        display: block;
         background-color: violet;
     }
 
