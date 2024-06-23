@@ -8,7 +8,7 @@ ul li a{
     color: rgb(228, 227, 226);
     font-family: sans-serif;
 }
-a:hover{
+.menu .logo a{
     color: yellow;
 }
 .logo{
@@ -16,7 +16,7 @@ a:hover{
     font-family: cursive;
     color: yellow;
     font-size: 5vh;
-    width: 30vw;
+    
     
     text-align: center;
 }
@@ -33,6 +33,7 @@ a:hover{
     align-items: center;
     border-bottom: solid black;
     background: linear-gradient(black,rgb(71, 70, 70),rgb(28, 28, 36));
+    height: 5vh;
 }
 .search-bar{
     
@@ -44,18 +45,12 @@ a:hover{
 }
 
 @media only screen and (max-width:700px) {
-    .itens{
-        display: none;
-    }
-    .ham~div{
-        display: block;
-        position: relative;
-        top: 300px;
-        
-    }
 
     .ham{
-        display: block;
+        display: block;   
+    }
+    .search-bar{
+        display: none;
     }
 
     .line_one{
@@ -83,8 +78,68 @@ a:hover{
         align-items: center;
         justify-content: space-between;
         border-bottom: solid black 2px;
-        background-color: brown;
+        background: linear-gradient(black,rgb(71, 70, 70),rgb(28, 28, 36));
 
     }
-    
+    .itens{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 8.2vh;
+        background-color: blue;
+        
+    }
+    .menu{
+        padding: 2vh;
+    }
+    .search-button{
+        background-color: violet;
+    }
+
+    h1{
+        font-family: Star;
+    }
+    .pages{
+        display: none;
+    }
+    body{
+        overflow: hidden;
+    }
+    .ham:active>:nth-child(1){
+        animation: transition 2s linear;
+        position: relative;
+        top: 10px;
+    }
+    .ham:active>:nth-child(3){
+        animation: transition2 2s linear;
+        position: relative;
+        bottom: 10px;
+    }
+    @keyframes transition {
+        from{transform:rotate(0deg);}
+        to{transform:rotate(120deg);}
+    }
+    .ham:active+.pages{
+        animation: transition3 2s linear;
+        
+    }
+        .ham:active+.pages{
+        animation: transition3 2s linear;
+        
+    }
+    .ham:active+.pages{
+        animation: transition3 2s linear;
+        
+    }
+
+@keyframes transition2 {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(-120deg);}
 }
+@keyframes transition3 {
+    from{transform:translateX(-10px);}
+    to{transform:translateX(-50vw);}
+}
+    }
+
+
