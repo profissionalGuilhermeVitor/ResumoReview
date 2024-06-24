@@ -21,7 +21,7 @@ ul li a{
     font-weight: bold;
     font-family: cursive;
     color: yellow;
-    font-size: 5vh;
+    font-size: 3vh;
     
     
     text-align: center;
@@ -141,13 +141,16 @@ ul li a{
     display: none;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:1200px) {
 
     .ham{
         display: block;   
     }
     .search-bar{
         display: none;
+    }
+    .logo{
+        font-size: 3vh;
     }
 
     .line_one{
@@ -203,41 +206,7 @@ ul li a{
     body{
         overflow: hidden;
     }
-    .ham:active>:nth-child(1){
-        animation: transition 2s linear;
-        position: relative;
-        top: 10px;
-    }
-    .ham:active>:nth-child(3){
-        animation: transition2 2s linear;
-        position: relative;
-        bottom: 10px;
-    }
-    @keyframes transition {
-        from{transform:rotate(0deg);}
-        to{transform:rotate(120deg);}
-    }
-    .ham:active+.pages{
-        animation: transition3 2s linear;
-        
-    }
-        .ham:active+.pages{
-        animation: transition3 2s linear;
-        
-    }
-    .ham:active+.pages{
-        animation: transition3 2s linear;
-        
-    }
-
-@keyframes transition2 {
-    from{transform:rotate(0deg);}
-    to{transform:rotate(-120deg);}
-}
-@keyframes transition3 {
-    from{transform:translateX(-10px);}
-    to{transform:translateX(-50vw);}
-}
+    
     }
 
 
