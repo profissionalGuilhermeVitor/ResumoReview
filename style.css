@@ -64,9 +64,9 @@ ul li a{
    height: 95vh;
 }
 .manual-navigation{
-    position: relative;
+    position: absolute;
     width: 100vw;
-    bottom: 6.5vh;
+    bottom: 5vh;
     display: flex;
     justify-content: center;
     
@@ -145,6 +145,7 @@ ul li a{
 
     .ham{
         display: block;   
+        cursor: pointer;
     }
     .search-bar{
         display: none;
@@ -187,7 +188,8 @@ ul li a{
         position: relative;
         top: 8.2vh;
         background-color: blue;
-        
+        z-index: 3;
+        width: 100vw;
     }
     .menu{
         padding: 2vh;
@@ -201,7 +203,7 @@ ul li a{
         font-family: Star;
     }
     .pages{
-        display: none;
+        width: 100vw;
     }
     body{
         overflow: hidden;
