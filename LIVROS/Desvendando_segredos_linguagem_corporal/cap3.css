@@ -5,7 +5,11 @@ main{
 }
 main h1{
     color: rgb(214, 214, 3);
-
+    font-family: Star;
     text-align: center;
     
+}
+@font-face {
+    font-family: Star;
+    src: url("../../Starjedi.ttf");
 }
